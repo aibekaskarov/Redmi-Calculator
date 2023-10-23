@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="calculator">
+        <div class="calculator__menu">
+            <div class="calculator__menu-1">=</div>
+            <a class="menu2" href="second.html">
+                <div class="calculator__menu-2">
+                    <div class="calculator__squares">
+                    <div class="calculator__square1"></div>
+                    <div class="calculator__square2"></div>
+                </div>
+                    <div class="calculator__square-equal">
+                    <div class="calculator__square3"></div>
+                    <div class="calculator__menu-equal">=</div>
+                </div>
+                </div>
+            </a>
+            <a class="menu3" href="third.html">
+                <div class="calculator__menu-3">
+                    <img class="calculator__menu3-icon" src="img/first/house-custom.svg" alt="">
+                </div>
+            </a>
+        </div>
+        <div class="calculator__display">
+            <input id="monitor" type="text" readonly>
+        </div>
+        <div class="calculator__btn">
+             <button onclick="clearInput()" class="calculator__orange-1">AC</button>
+             <button onclick="deleteValue('⌫')" class="calculator__orange-1">⌫</button>
+             <button onclick="percentValue('％')" class="calculator__orange-1">％</button>
+             <button onclick="arithmeticValue('/')" class="calculator__orange division" id="operator">÷</button>
+
+             <button onclick="appendValue('7')" class="calculator__white">7</button>
+             <button onclick="appendValue('8')" class="calculator__white">8</button>
+             <button onclick="appendValue('9')" class="calculator__white">9</button>
+             <button onclick="arithmeticValue('*')" class="calculator__orange" id="operator">×</button>
+
+             <button onclick="appendValue('4')" class="calculator__white">4</button>
+             <button onclick="appendValue('5')" class="calculator__white">5</button>
+             <button onclick="appendValue('6')" class="calculator__white">6</button>
+             <button onclick="arithmeticValue('-')" class="calculator__orange" id="operator">-</button>
+
+             <button onclick="appendValue('1')" class="calculator__white">1</button>
+             <button onclick="appendValue('2')" class="calculator__white">2</button>
+             <button onclick="appendValue('3')" class="calculator__white">3</button>
+             <button onclick="arithmeticValue('+')" class="calculator__orange" id="operator">+</button>
+             
+             <button onclick="appendValue('0')" class="calculator__zero">0</button>
+             <button onclick="pointValue(',')" class="calculator__white">,</button>
+             <button onclick="calculateResult('=')" class="calculator__equal">=</button>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
